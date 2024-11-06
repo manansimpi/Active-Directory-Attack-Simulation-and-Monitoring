@@ -1,10 +1,6 @@
 # Active Directory Attack Simulation and Monitoring
 
-
-
-
 ## Project Description:
-
 - This project establishes a virtual environment with Active Directory to simulate and monitor security events. Four virtual machines were set up in a NAT network for seamless communication. Key tasks include configuring AD, executing an RDP attack from Kali Linux, and analyzing telemetry in Splunk to understand security responses.
 
 
@@ -43,7 +39,7 @@ The virtual environment architecture includes four main components:
 - Active Directory Server (Windows Server 2022) – Manages domain and user accounts.
 - Splunk Server (Ubuntu) – Monitors and logs attack telemetry in real time.
 
-Diagrams:
+### Diagrams:
 
 Network Diagram: Attached (diagram illustrates the NAT network layout, showing connectivity between all virtual machines).
 System Architecture Diagram: Displays interactions among the Windows 10, Active Directory, Kali Linux, and Splunk VMs.
