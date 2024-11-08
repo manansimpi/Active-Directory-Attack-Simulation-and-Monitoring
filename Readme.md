@@ -52,11 +52,11 @@ The virtual environment architecture includes four primary components:
 1. Install VirtualBox and create each VM.
 2. Set up a NAT network and add all VMs to enable inter-VM communication.
 
-### Ubuntu (Splunk Server) Configuration
+### Ubuntu (Splunk Server) 
 - Install Splunk and configure it to start on port 8000 at each startup.
 - Enable telemetry logging in Splunk to capture and monitor events.
   
-### Windows 10 (Endpoint) Configuration
+### Windows 10 (Endpoint) 
 - Sysmon: Install Sysmon to capture telemetry (e.g., process creation, network connections).
 - Use a custom XML file to filter and capture necessary event types in the Windows Event Log.
 - Splunk Universal Forwarder: Install and configure it to send Sysmon logs to the Splunk server (Ubuntu) on the designated listening port.
@@ -75,7 +75,7 @@ The virtual environment architecture includes four primary components:
 - Use the search index="(e.g., sysmon)" to view the ingested Sysmon data from the Windows 10 endpoint.
 
 
-### Windows Server 2022 Configuration:
+### Windows Server 2022:
 - Install and Configure the Windows Server with the Same configuration done in windows(ie sysmon and Splunk configurations)
 
 
@@ -86,7 +86,7 @@ The virtual environment architecture includes four primary components:
 - Create two user accounts in different departments (e.g., IT and HR).
 - Connect the Windows 10 machine to the AD domain.
 
-### Windows 10 Machine 
+### Windows 10 Machine(RDP Setup) 
 - Enabled RDP for both the Users under the AD Domain.  
 
 
